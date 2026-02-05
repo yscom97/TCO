@@ -16,18 +16,27 @@ CJ Logistics India Branch – Fleet TCO (Total Cost of Ownership) and feasibilit
 
 Open `index.html` or `chennai_tco_simulator.html` in a browser (no server required; uses CDN for React, Tailwind, Recharts).
 
-## Deploy on GitHub Pages
+## Deploy on GitHub Pages (using your GitHub)
 
-1. **Create a GitHub repository** (e.g. `TCO_Simulator`).
+1. **Create the repo on GitHub** (if not exists):
+   - Go to [github.com/new](https://github.com/new)
+   - Repository name: `TCO_Simulator`
+   - Public, no README/license (this project already has them)
+   - Create repository
 
-2. **Push this project** to the repo:
-   ```bash
-   git init
-   git add index.html chennai_tco_simulator.html .nojekyll README.md
-   git commit -m "Add TCO Simulator for GitHub Pages"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/TCO_Simulator.git
+2. **Push from this project** (remote is set to `https://github.com/yskim/TCO_Simulator.git`):
+   ```powershell
+   cd "d:\03. Projects\TCO_Simulator"
+   # One-time: set your Git identity (use your GitHub name/email)
+   git config --global user.name "Your Name"
+   git config --global user.email "your-email@example.com"
+   # Push (browser or credential window will open for login)
    git push -u origin main
+   ```
+   Or run the script: `.\deploy.ps1`  
+   If your GitHub username is not **yskim**, change the remote first:
+   ```bash
+   git remote set-url origin https://github.com/YOUR_USERNAME/TCO_Simulator.git
    ```
 
 3. **Enable GitHub Pages**:
@@ -38,7 +47,7 @@ Open `index.html` or `chennai_tco_simulator.html` in a browser (no server requir
    - Save
 
 4. After a minute or two, the app will be available at:
-   - **https://YOUR_USERNAME.github.io/TCO_Simulator/**
+   - **https://yskim.github.io/TCO_Simulator/** (replace **yskim** with your GitHub username if different)
 
 The `.nojekyll` file tells GitHub not to use Jekyll so that your HTML and assets are served as-is.
 
