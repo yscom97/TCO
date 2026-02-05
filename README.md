@@ -24,7 +24,7 @@ Open `index.html` or `chennai_tco_simulator.html` in a browser (no server requir
    - Public, no README/license (this project already has them)
    - Create repository
 
-2. **Push from this project** (remote is set to `https://github.com/yskim/TCO_Simulator.git`):
+2. **Push from this project** (remote is set to `https://github.com/yscom97/TCO_Simulator.git`):
    ```powershell
    cd "d:\03. Projects\TCO_Simulator"
    # One-time: set your Git identity (use your GitHub name/email)
@@ -34,7 +34,7 @@ Open `index.html` or `chennai_tco_simulator.html` in a browser (no server requir
    git push -u origin main
    ```
    Or run the script: `.\deploy.ps1`  
-   If your GitHub username is not **yskim**, change the remote first:
+   If your GitHub username is not **yscom97**, change the remote first:
    ```bash
    git remote set-url origin https://github.com/YOUR_USERNAME/TCO_Simulator.git
    ```
@@ -47,7 +47,7 @@ Open `index.html` or `chennai_tco_simulator.html` in a browser (no server requir
    - Save
 
 4. After a minute or two, the app will be available at:
-   - **https://yskim.github.io/TCO_Simulator/** (replace **yskim** with your GitHub username if different)
+   - **https://yscom97.github.io/TCO_Simulator/**
 
 The `.nojekyll` file tells GitHub not to use Jekyll so that your HTML and assets are served as-is.
 

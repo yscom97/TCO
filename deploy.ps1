@@ -19,10 +19,10 @@ if (-not $name -or -not $email) {
     Write-Host "Saved. Continuing push." -ForegroundColor Green
 }
 
-# Remote should already be: https://github.com/yskim/TCO_Simulator.git
+# Remote should already be: https://github.com/yscom97/TCO_Simulator.git
 $remote = & $git remote get-url origin 2>$null
 if (-not $remote) {
-    & $git remote add origin "https://github.com/yskim/TCO_Simulator.git"
+    & $git remote add origin "https://github.com/yscom97/TCO_Simulator.git"
     Write-Host "Added remote origin." -ForegroundColor Green
 }
 
@@ -30,5 +30,5 @@ Write-Host "Pushing to GitHub (browser or login may open for auth)..." -Foregrou
 & $git push -u origin main
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Done. Enable Pages: Repo -> Settings -> Pages -> Source: main, / (root) -> Save" -ForegroundColor Green
-    Write-Host "App URL: https://yskim.github.io/TCO_Simulator/" -ForegroundColor Green
+    Write-Host "App URL: https://yscom97.github.io/TCO_Simulator/" -ForegroundColor Green
 }
