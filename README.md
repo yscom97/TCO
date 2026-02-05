@@ -14,7 +14,7 @@ CJ Logistics India Branch – Fleet TCO (Total Cost of Ownership) and feasibilit
 
 ## Run locally
 
-Open `index.html` or `chennai_tco_simulator.html` in a browser (no server required; uses CDN for React, Tailwind, Recharts).
+Open `index.html` (redirects to app) or `simulator/chennai_tco_simulator.html` in a browser (no server required; uses CDN for React, Tailwind, Recharts).
 
 ## Deploy on GitHub Pages (using your GitHub)
 
